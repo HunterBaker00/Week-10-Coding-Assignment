@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4Runner Build List</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container">
+    <br>
+    <h1>Vehicle Build List</h1>
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                      <label for="new-install-start-date">Install Start Date</label> 
+                      <input type="date" class="form-control" id="new-install-start-date">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-install-end-date">Install End Date</label> 
+                        <input type="date" class="form-control" id="new-install-end-date">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-part">Part</label> 
+                        <input type="text" class="form-control" id="new-part" placeholder="Part">
+                    </div> 
+                </div>
+            </div>
+            <div>
+                <buton id="add" class="btn btn-primary form-control">Create</buton> 
+            </div>
+        </div>
+    </div>
+    <table id="list" class="table table-dark table-striped">
+        <tr>
+            <th>Part</th>
+            <th>Date Created</th>
+            <th>Install Start Date</th>
+            <th>Install End Date</th>
+            <th>Actions</th>
+        </tr>
+    </table>
+
+
+
+
+
+
+        <script src="index.js"></script>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+</body>
+</html>
